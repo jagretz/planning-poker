@@ -3,10 +3,13 @@ Planning poker, in regards to software (product) development.
 
 # Questions
 
-- Web app, phone app or Both?
-- What is the timeline
-- What is our MVP
-- What technology or area do you want to focus on?
+- [x] Web app, phone app or Both?
+  - Web platform
+- [] What technology or area do you want to focus on?
+  - Firebase for auth, persistence, etc
+  - react
+- [x] What is our MVP
+- What is the timeline. Refer to MVP
 
 
 
@@ -16,33 +19,73 @@ Planning poker, in regards to software (product) development.
 - CRA - immediate startup, sass support
 
 
+# Responsibilities / Action Items
+
+Design / UX
+
+
+**Charles**
+
+- [ ] Spend reading on react
+
+**Jason**
+
+- [x] Give Charles rights to github project
+- [ ] Create project on github
+- [ ] Next week
+- [ ] Setup starter app
+
 # MVP
 
 **In scope**
 
-- Name for the app
-- hosting option (discuss / research)
-- temporary users
-- show number of players
-- ability to create a one-time unique link
+- Name for the app - "Planning Poker"
+- Sessions
+  - ability to create temporary sessions
+  - ability to join temporary sessions
+  - ability to create a one-time unique link
+    - Show link / room name
+- show name/number of players in game
   - Anyone with a link can join
-  - Ability to copy & share link (open email, twitter, fb, ?)
-  - max-life of link is 4 hours
-- Table
+- Table (UX)
   - Show cards played
   - show empty slots for cards-to-be played
-  - Options
-    - reset cards
-    - flip cards
-- Show deck
-
+- Show deck (UX)
+- Player role
+    - Allowed to vote
+    - Allowed to reset cards
+    - Allowed to reveal votes
 
 
 **Backlog** / leave out
-
+**top 3 highest priority**
+- _(core feature)_ Moderator Options - Moderators are core to the functionality to the app.
+  - Allowed to vote
+  - reset cards
+  - flip cards
+- Occasional clean up of old games
+    - max-life of link is 4 hours
+- Ability to copy session link
+----
+- Show number of invited players
+- hosting option (discuss / research)
+  - github pages, netlify (CI/CD), gitlab
+- CI/CD
+  - netlify, gitlab, jenkins
+- Ability to share session link (open email, twitter, fb, ?)
+- Moderator voting can be optional
+- anonymous voting per round
+    - mask user names for voting
+    - when outliers occur, people just speak their piece/
+      reveal themselves
+- Auto detection of outliers
+    - Indicate outlier cards
+    - (if anonymized voting) Reveal identities of outliers
+    - Need to determine outlier conditions
 - user accounts
   - Account view
 - history & tracking
+- Analytics
 - time & timers
   - clock
   - countdown
@@ -66,14 +109,6 @@ Planning poker, in regards to software (product) development.
 - Chat
 - Camera
 
-
-
-# Responsibilities
-
-**Charles**
-
-
-**Jason**
 
 
 
