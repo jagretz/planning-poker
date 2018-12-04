@@ -1,0 +1,51 @@
+{
+    "extends": [
+        "stylelint-config-standard",
+        "stylelint-config-css-modules"
+    ],
+    "rules": {
+        "comment-empty-line-before": null,
+        "comment-whitespace-inside": null,
+        "declaration-block-no-redundant-longhand-properties": [
+            true,
+            {
+                "ignoreShorthands": [
+                    "grid",
+                    "/template/"
+                ]
+            }
+        ],
+        "declaration-empty-line-before": "never",
+        "declaration-block-no-duplicate-properties": [
+            true,
+            {
+                "ignore": [
+                    "consecutive-duplicates-with-different-values"
+                ]
+            }
+        ],
+        "function-url-quotes": "always",
+        "font-family-name-quotes": "always-where-recommended",
+        "indentation": 4,
+        "no-eol-whitespace": [
+            true,
+            {
+                "ignore": [
+                    "empty-lines"
+                ]
+            }
+        ],
+        "no-missing-end-of-source-newline": null,
+        "selector-list-comma-newline-after": "always",
+        "selector-max-id": 1,
+        "selector-no-qualifying-type": [
+            true,
+            {
+                "ignore": [
+                    "attribute"
+                ]
+            }
+        ],
+        "string-quotes": "double"
+    }
+}

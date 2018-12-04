@@ -1,15 +1,24 @@
-**Planning Poker**, as it pertains to software (product) development.
 
+
+# Planning Poker
+
+- [Planning Poker](#planning-poker)
+- [Installation & Startup](#installation--startup)
 - [Oustanding Questions](#oustanding-questions)
 - [Roadmap](#roadmap)
 - [Decisions](#decisions)
 - [Requirements](#requirements)
 - [What is Planning Poker](#what-is-planning-poker)
-  - [Benefits](#benefits)
-  - [Pitfallls](#pitfallls)
+    - [Benefits](#benefits)
+    - [Pitfallls](#pitfallls)
 - [Similar Existing Projects](#similar-existing-projects)
 - [Terminology](#terminology)
 
+
+# Installation & Startup
+
+This project was bootstrapped with [R3](https://github.com/jagretz/R3). Review that repository for standards, design decisions and best practices for _this_ project.
+**Planning Poker**, as it pertains to software (product) development.
 
 # Oustanding Questions
 

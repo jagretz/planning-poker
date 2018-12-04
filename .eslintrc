@@ -1,0 +1,10 @@
+{
+    "extends": [
+        "airbnb",
+        "airbnb-base/rules/es6",
+        "airbnb-base/rules/imports",
+        "prettier",
+        "./eslint-base.js",
+        "./eslint-react.js"
+    ]
+}
