@@ -8,12 +8,20 @@ class Room extends React.Component {
         this.state = {
             showCards: true
         };
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        this.setState(state => ({
+            showCards: !state.showCards
+        }));
     }
 
     render() {
         return (
             <div>
-                <RevealHideButton toShow={!this.state.showCards} />
+                <RevealHideButton onClick={this.handleClick} toShow={!this.state.showCards} />
                 <div>
                     <DummyCard name="1" isDisplayed={this.state.showCards} />
                     <DummyCard name="2" isDisplayed={this.state.showCards} />

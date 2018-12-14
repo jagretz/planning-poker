@@ -1,8 +1,20 @@
 import React from "react";
 
-function RevealHideButton(props) {
-    const buttonText = props.toShow ? "Reveal" : "Hide";
-    return <button>{buttonText}</button>;
+// TODO better naming for this.props.onClick and toggle()
+class RevealHideButton extends React.Component {
+    constructor(props) {
+        super(props);
+        this.toggle = this.toggle.bind(this);
+    }
+
+    toggle() {
+        this.props.onClick();
+    }
+
+    render() {
+        const buttonText = this.props.toShow ? "Reveal" : "Hide";
+        return <button onClick={this.toggle}>{buttonText}</button>;
+    }
 }
 
 export default RevealHideButton;
