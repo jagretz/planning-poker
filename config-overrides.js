@@ -1,4 +1,5 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
+const rewireReactHotLoader = require("react-app-rewire-hot-loader");
 const rewireCssModules = require("./rewireConfig/cssModules");
 const rxPipeableOperators = require("./rewireConfig/pipeableOperators");
 
@@ -9,6 +10,7 @@ const rxPipeableOperators = require("./rewireConfig/pipeableOperators");
 
 module.exports = function override(config, env) {
     config = rewireCssModules(config, env);
+    config = rewireReactHotLoader(config, env);
     config = rxPipeableOperators(config, env);
     return config;
 };
