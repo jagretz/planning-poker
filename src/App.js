@@ -1,4 +1,5 @@
 import React from "react";
+import DummyCard from "./DummyCard";
 import logo from "./logo.svg";
 import "./App.css";
 
@@ -11,6 +12,9 @@ function App() {
             </header>
             <p className="App-intro">
                 To get started, edit <code>src/App.js</code> and save to reload.
+            </p>
+            <p>
+                <DummyCard name="aaa" isDisplayed />
             </p>
         </div>
     );
